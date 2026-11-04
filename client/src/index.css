@@ -1,0 +1,16 @@
+:root {
+  font-family: "Segoe UI", sans-serif;
+  line-height: 1.5;
+  color: #1c1917;
+  background: #f6f4f1;
+}
+
+body {
+  margin: 0;
+}
+
+.scaffold {
+  max-width: 40rem;
+  margin: 4rem auto;
+  padding: 0 1.5rem;
+}
