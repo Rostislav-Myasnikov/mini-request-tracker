@@ -1,13 +1,19 @@
-import { TICKET_STATUSES, type TicketStatus } from "@shared/ticket";
-
-const statuses: readonly TicketStatus[] = TICKET_STATUSES;
+import { Navigate, Route, Routes } from "react-router-dom";
+import { AppLayout } from "./components/AppLayout";
+import { NewRequestPage } from "./pages/NewRequestPage";
+import { RequestDetailsPage } from "./pages/RequestDetailsPage";
+import { RequestsPage } from "./pages/RequestsPage";
 
 export function App() {
   return (
-    <main className="scaffold">
-      <h1>Мини-трекер заявок</h1>
-      <p>Каркас клиента подключён к общему модулю типов.</p>
-      <p>Статусы: {statuses.join(", ")}</p>
-    </main>
+    <Routes>
+      <Route element={<AppLayout />}>
+        <Route index element={<Navigate to="/requests" replace />} />
+        <Route path="/requests" element={<RequestsPage />} />
+        <Route path="/requests/new" element={<NewRequestPage />} />
+        <Route path="/requests/:id" element={<RequestDetailsPage />} />
+        <Route path="*" element={<Navigate to="/requests" replace />} />
+      </Route>
+    </Routes>
   );
 }

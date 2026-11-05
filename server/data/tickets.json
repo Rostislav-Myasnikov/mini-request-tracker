@@ -1,1 +1,26 @@
-[]
+[
+  {
+    "id": "4a36fee7-c477-477d-b925-e4703df0102f",
+    "title": "Test ticket",
+    "description": "My first test ticket",
+    "status": "in_progress",
+    "createdAt": "2026-11-05T10:26:44.836Z",
+    "updatedAt": "2026-11-05T10:45:35.627Z"
+  },
+  {
+    "id": "c113d2f7-ae2a-47b8-8202-b80b7d832785",
+    "title": "тест",
+    "description": "",
+    "status": "new",
+    "createdAt": "2026-11-05T10:45:55.577Z",
+    "updatedAt": "2026-11-05T10:45:55.577Z"
+  },
+  {
+    "id": "160a288c-418d-4890-8af8-2055c3db5103",
+    "title": "тест 2",
+    "description": "тест",
+    "status": "in_progress",
+    "createdAt": "2026-11-05T10:46:08.355Z",
+    "updatedAt": "2026-11-05T10:46:15.563Z"
+  }
+]
